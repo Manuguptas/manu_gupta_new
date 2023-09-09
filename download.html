@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="makeresumejs.js"></script>
+    <link rel="stylesheet" href="makeresumecss.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Make your resume</title>
+</head>
+
+<body>
+    <div class="hideUse">
+        <header class="headingS">
+            <h1> Make your resume </h1>
+            <p>CoDe by Gupta</p>
+
+        </header>
+        <!-- ===================================================== -->
+        <section>
+            <!-- background color -->
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+
+            <!-- ===================total box=================== -->
+            <div class="box">
+
+                <div class="container grid-two">
+
+                    <!-- ===================left container=================== -->
+                    <div class="forms">
+                        <h2>Profassional Information</h2>
+                        <form>
+                            <div class="inputBox">
+                                <p>
+                                    <!-- <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button> -->
+                                    <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                                        data-bs-target=".multi-collapse" aria-expanded="false"
+                                        aria-controls="multiCollapseExample1 multiCollapseExample2">Add more
+                                        qualification
+                                    </button>
+                                </p>
+                                <input type="text" class="academic" id="Academic" placeholder="School Name">
+                                <p id="lastQuali">D:If you want add your last qualification.</p>
+                                <div class="inputBox">
+                                    <input type="text" class="jsADD" id="percentage" placeholder="School percentage">
+                                </div>
+
+                                <div class="inputBox">
+                                    <input type="text" class="jsADD" id="passing" placeholder="School Year of passing">
+
+                                </div>
+
+                                <div class="academic">
+                                    <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                            <div class="academic card-body">
+                                                <input type="text" class="collageName" placeholder="collage Name">
+
+                                                <input type="text" class="CLGpercentage"
+                                                    placeholder=" collage percentage">
+
+                                                <input type="text" class="CLGpassing"
+                                                    placeholder="collage year of passing">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- <button class="ADDbtn" onclick="morebutton()" id="AcademicBtn">More</button> -->
+                            </div>
+
+                            <!-- <div class="inputBox">
+                            <input type="text" class="jsADD" placeholder="Interpersonal Skill">
+                        </div> -->
+
+                            <div class="inputBox">
+                                <!-- <textarea id="Workfld" placeholder="Work Experience" cols="33" rows="3"></textarea> -->
+                                <input type="text" id="Workfld" placeholder="Work Experience">
+                                <button class="button-28" onclick="buttoN()">ADD</button>
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" class="jsADD" id="languge" placeholder="Languge">
+                                <button class="button-28" onclick="button()">ADD</button>
+                            </div>
+
+
+                            <div class="inputBox DateSing">
+                                <input type="date" id="datAS" placeholder="Date">
+                                <!-- <input type="text" id="signature" placeholder="signature"> -->
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <!-- =========================================================================== -->
+                    <div class="form">
+                        <h2>Personal Information</h2>
+                        <form action="#">
+
+                            <div class="inputBox">
+                                <input type="text" id="nameFild" placeholder="Enter name">
+                            </div>
+
+                            <div class="inputBox">
+                                <input type="mobile" id="contactNum" placeholder="Your contact">
+                            </div>
+
+                            <div class="inputBox">
+                                <input type="textarea" id="address" placeholder="Your Address">
+                            </div>
+
+                            <div class="inputBox">
+                                <input type="email" id="email" placeholder="demo@gmil.com">
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" id="dateBirth" placeholder="Date of Birth">
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" id="gender" placeholder="Gender">
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" id="booklink" placeholder="Facebook">
+                            </div>
+
+                            <div class="inputBox">
+                                <input type="textarea" id="hobbis" placeholder="Your Hobbis">
+                                <!-- <button id="HobbisBtn" class="ADDbtn">More</button> -->
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- submit button -->
+            <div class="SubPintBtn">
+                <input type="submit" id="SubmitBtn" width="2rem" onclick="SubmitBtn()" class="button-29">
+
+            </div>
+            <!-- <input type="Print CV" id="prinBTn" placeholder="Print CV" onclick="printBtn()"> -->
+            <hr>
+        </section>
+    </div>
+    <br><br>
+    <!--==============================
+         resume template 
+        ===============================-->
+    <div class="containerS " id="CV-template">
+        <div class="hedder">
+            <p>CURRICULLUM VITAE</p>
+        </div>
+        <div class="fauls"></div>
+        <div class="row">
+            <!-- photo section -->
+            <div class="photoS">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/009/734/564/small/default-avatar-profile-icon-of-social-media-user-vector.jpg"
+                    width="170em" alt="">
+            </div>
+            <!-- parsonal details -->
+            <br>
+
+
+            <div class="name"><b> Name :</b>
+                <p id="nameTamp"> </p>
+            </div>
+
+            <div class="contact ">
+
+                <b> Mobile No:</b>
+                <br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-telephone">
+                    <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>
+                <label id="contactTamp">: </label>
+            </div>
+
+            <div class="email">
+                <b>Email:</b><br>
+                <label id="EmailT"></label>
+            </div>
+            <div class="address">
+                <b>Address:</b>
+                <br>
+                <label id="addressTamp">bankura,sonamukhi</label>
+            </div>
+            <br><br>
+            <br>
+            <div class="birth">
+                <b>Date Of Birth:</b><br>
+                <label id="dateBrithTamp"> 16/10/1997</label>
+            </div>
+            <br><br>
+            <div class="gender">
+                <label> <b> Gender: </b></label>
+                <p id="genderTemp">male</p>
+            </div>
+
+            <div class="facebooktamp">
+                <label><b> Facebook Link: </b></label>
+                <p id="facebooktamp">Facebook Link</p>
+            </div>
+
+
+            <div class="hobbis">
+                <b>Hobbies:</b>
+                <br>
+                <label>
+                    <ul>
+                        <li id="hobbisTamp">Playing video game</li>
+
+                    </ul>
+                </label>
+            </div>
+
+
+            <br>
+            <div class="language">
+                <b>Language:</b> <br>
+                <ul id="lagT"></ul>
+            </div>
+        </div>
+
+        <!-- =================profasonal information============ -->
+        <div class="collum">
+            <div class="carrer object">
+                <div class="textObject">
+                    <p>CAREER OBJECT</p>
+
+                </div>
+                <label>
+                    A platform which gave me a chance to exploit my extreme interest in the field of Business
+                    administration, <br>
+                    Full fill my desire to do something out of the box. explore my talent and showcase
+                    my skills properly.
+                </label>
+                <br>
+                <br>
+
+                <!-- ===================================Academic qualication==================================== -->
+                <div class="academicCarrer">
+                    <p>ACADEMIC CARRER</p>
+
+                    <table class="table table-dark" id="TableTag">
+                        <thead class="space">
+                            <tr>
+
+                                <th scope="col"> <u> Academic name </u></th>
+                                <th scope="col"> <u> Year of passing </u></th>
+                                <th scope="col"> <u> Percentage </u></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td id="AcademicTemp">Mark</td>
+                                <td id="passingTemp">Otto</td>
+                                <td id="percentageTemp">@mdo</td>
+                            </tr>
+                            <tr>
+                                <td id="clgTemp">Jacob</td>
+                                <td id="clgPsTamp">Thornton</td>
+                                <td id="clgperTamp">@fat</td>
+                            </tr>
+                            <!-- <tr>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <!-- ========================work exprince========================= -->
+                <div class="workEx">
+                    <p>WORK/PROJECT</p>
+                    <ul id="workTemp">
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- =============================strenths============================== -->
+            <div class="workEx">
+                <p>PERSONAL STRENTHS</p>
+                <ol>
+                    <li>Optimistic and capable of taking instant decisions.</li>
+                    <li>Quick Learner, positive attitude,Hard Working,Honest, leadership skill, Confident and good
+                        analytical skill.</li>
+                    <li>Creative, Problem solver, Flexible.</li>
+
+                </ol>
+
+            </div>
+
+
+            <!-- ============================ declaration ================================ -->
+            <div class="workEx">
+                <p> DECLARATION</p>
+                <label> I hereby declare that the above mentioned information is correct to the best of my knowledge and
+                    bear the responsibility for the correctness of the above mentioned particulars. </label>
+
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- ============================ fathfully section =============================== -->
+            <div class="fathfully grid-two">
+                <div class="dateS">Date: <label id="DateT"> 10 16 1997</label></div>
+                <div class="sing">Signature: <label id="singT"></label></div>
+            </div>
+            <br><br>
+            <div class="SubPintBtn">
+                <button id="printBTn" onclick="printBTN()">Print CV</button>
+            </div>
+            <!-- ===========================space only================ -->
+            <div class="fauls"></div>
+        </div>
+</body>
+
+</html>
